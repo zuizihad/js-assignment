@@ -19,3 +19,18 @@ function kilometerToMeter(value) {
 
 var result = kilometerToMeter(12);
 console.log(result);
+
+
+//budget calculator
+function budgetCalculator(watchQuantity, phoneQuantity, laptopQuantity) {
+    if (watchQuantity <= 0 || phoneQuantity <= 0 || laptopQuantity <= 0) {
+        return "nagetive quantity can not acceptable";
+    } else {
+        var costOfWatch = watchQuantity * 50;
+        var costOfPhone = phoneQuantity * 100;
+        var costOfLaptop = laptopQuantity * 500;
+        return totalCost = costOfLaptop + costOfPhone + costOfWatch;
+    }
+}
+var totalAmount = budgetCalculator(3, 2, 10);
+console.log(totalAmount);
