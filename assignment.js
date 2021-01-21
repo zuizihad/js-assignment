@@ -34,3 +34,30 @@ function budgetCalculator(watchQuantity, phoneQuantity, laptopQuantity) {
 }
 var totalAmount = budgetCalculator(3, 2, 10);
 console.log(totalAmount);
+
+
+// hotel cost
+function hotelCost(stayDay) {
+    var costAmount = 0;
+    if (stayDay <= 0) {
+        return "value is nagetive or zero";
+    } else if (stayDay <= 10) {
+        costAmount = stayDay * 100;
+    } else if (stayDay <= 20) {
+        var tenDaysCost = 10 * 100;
+        var remainingDays = stayDay - 10;
+        var otherDays = remainingDays * 80;
+        costAmount = tenDaysCost + otherDays;
+    } else {
+        var firstTenDaysCost = 10 * 100;
+        var secondTenDaysCost = 20 * 80;
+        var remainingDays = stayDay - 20;
+        var otherDays = remainingDays * 50;
+        costAmount = firstTenDaysCost + secondTenDaysCost + otherDays;
+    }
+    return costAmount;
+}
+
+var total = hotelCost(12);
+console.log(total);
+
