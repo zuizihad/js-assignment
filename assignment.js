@@ -18,7 +18,7 @@ console.log(result);
 
 //budget calculator
 function budgetCalculator(watchQuantity, phoneQuantity, laptopQuantity) {
-    if (watchQuantity <= 0 || phoneQuantity <= 0 || laptopQuantity <= 0) {
+    if (watchQuantity < 0 || phoneQuantity < 0 || laptopQuantity < 0) {
         return "negative quantity can not acceptable";
     } else {
         var costOfWatch = watchQuantity * 50;
@@ -27,7 +27,7 @@ function budgetCalculator(watchQuantity, phoneQuantity, laptopQuantity) {
         return totalCost = costOfLaptop + costOfPhone + costOfWatch;
     }
 }
-var totalAmount = budgetCalculator(3, 2, 10);
+var totalAmount = budgetCalculator(3, 2, 0);
 console.log(totalAmount);
 
 
@@ -45,7 +45,7 @@ function hotelCost(stayDay) {
         costAmount = tenDaysCost + otherDays;
     } else {
         var firstTenDaysCost = 10 * 100;
-        var secondTenDaysCost = 20 * 80;
+        var secondTenDaysCost = 10 * 80;
         var remainingDays = stayDay - 20;
         var otherDays = remainingDays * 50;
         costAmount = firstTenDaysCost + secondTenDaysCost + otherDays;
