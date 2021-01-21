@@ -61,3 +61,26 @@ function hotelCost(stayDay) {
 var total = hotelCost(12);
 console.log(total);
 
+
+// mega friend
+function megaFriend(str) {
+    if (!str) {
+        return "something went wrong";
+    } else if (str.length > 0) {
+        var max = 0;
+        var longestName = "";
+        for (var i = 0; i < str.length; i++) {
+            if (str[i].length > max) {
+                max = str[i].length;
+                longestName = str[i];
+            }
+        }
+        return longestName;
+    } else {
+        return "array is empty";
+    }
+
+}
+var myFriend = ["zihad", "zihadul", "zihadul islam"];
+var friend = megaFriend(myFriend);
+console.log(friend);
