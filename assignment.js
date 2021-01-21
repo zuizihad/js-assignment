@@ -1,9 +1,3 @@
-/*
-    Author: Zihadul Islam
-    email: ahmedxihad@gmail.com
-    github: https://github.com/zuizihad/js-assignment
-
-*/
 // https://github.com/zuizihad/js-assignment
 
 
