@@ -4,16 +4,17 @@
     github: https://github.com/zuizihad/js-assignment
 
 */
+// https://github.com/zuizihad/js-assignment
 
 
 // kilometer to meter
-function kilometerToMeter(value) {
-    if (value < 0) {
-        return "nagetive value";
-    } else if (value == 0) {
-        return "nutral value";
+function kilometerToMeter(kmValue) {
+    if (kmValue < 0) {
+        return "negative value";
+    } else if (kmValue == 0) {
+        return "neutral value";
     } else {
-        return meter = value * 1000;
+        return meter = kmValue * 1000;
     }
 }
 
@@ -24,7 +25,7 @@ console.log(result);
 //budget calculator
 function budgetCalculator(watchQuantity, phoneQuantity, laptopQuantity) {
     if (watchQuantity <= 0 || phoneQuantity <= 0 || laptopQuantity <= 0) {
-        return "nagetive quantity can not acceptable";
+        return "negative quantity can not acceptable";
     } else {
         var costOfWatch = watchQuantity * 50;
         var costOfPhone = phoneQuantity * 100;
@@ -40,7 +41,7 @@ console.log(totalAmount);
 function hotelCost(stayDay) {
     var costAmount = 0;
     if (stayDay <= 0) {
-        return "value is nagetive or zero";
+        return "value is negative or zero";
     } else if (stayDay <= 10) {
         costAmount = stayDay * 100;
     } else if (stayDay <= 20) {
@@ -79,7 +80,6 @@ function megaFriend(str) {
     } else {
         return "array is empty";
     }
-
 }
 var myFriend = ["zihad", "zihadul", "zihadul islam"];
 var friend = megaFriend(myFriend);
